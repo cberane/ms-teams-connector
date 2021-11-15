@@ -1,0 +1,45 @@
+{
+    "name": "cberane/ms-teams-connector",
+    "description": "A simple package to send messages through incoming webhooks to Microsoft Teams",
+    "keywords": [
+        "cberane",
+        "Microsoft Teams",
+        "Connector",
+        "Webhook"
+    ],
+    "homepage": "https://github.com/cberane/ms-teams-connector",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cristoph Berane",
+            "email": "cristoph@berane.eu",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cberane\\MsTeamsConnector\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cberane\\MsTeamsConnector\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-webhooks": "vendor/bin/phpunit tests/WebhookTest.php",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
