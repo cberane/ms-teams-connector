@@ -34,7 +34,7 @@ class TeamsConnector
     }
 
     /**
-     * sends the given body to theendpoint
+     * sends the given body to the endpoint
      *
      * **Attention:** you have to create a valid json payload
      * for the webhook to work as expected

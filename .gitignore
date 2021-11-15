@@ -3,3 +3,4 @@ vendor
 /*.iml
 .phpunit.result.cache
 /phpunit.xml
+coverage
