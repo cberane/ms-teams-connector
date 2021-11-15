@@ -18,10 +18,13 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="MS Teams Integration Test Suite">
+    <testsuite name="default">
       <directory>tests</directory>
       <!-- exclude webhooks by default to prevent unwanted endpoint triggering-->
       <exclude>tests/WebhookTest.php</exclude>
+    </testsuite>
+    <testsuite name="all">
+      <directory>tests</directory>
     </testsuite>
   </testsuites>
   <php>

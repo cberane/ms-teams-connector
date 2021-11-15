@@ -26,7 +26,8 @@ class MultichoiceInputTest extends TestCase
      */
     public function set_id()
     {
-        $input = new MultichoiceInput(true,'myID');
+        $input = new MultichoiceInput(false,'myID');
+        $input->setIsMultiselect(true);
 
         self::assertEquals('{"@type":"MultichoiceInput","id":"myID","isMultiselect":true,"choices":[]}', $input->toJson());
     }

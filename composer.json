@@ -35,8 +35,8 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-webhooks": "vendor/bin/phpunit tests/WebhookTest.php",
+        "test": "vendor/bin/phpunit --testsuite default",
+        "test-webhooks": "vendor/bin/phpunit --testsuite webhooks",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "config": {

@@ -15,7 +15,7 @@ class Choice
         $this->value = $value;
     }
 
-    public function toArray()
+    public function toArray(): array
     {
         return [
             'display' => $this->display,
