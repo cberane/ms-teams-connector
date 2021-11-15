@@ -1,7 +1,8 @@
 # MS Teams Connector
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/cberane/ms-teams-connector.svg?style=flat-square)](https://packagist.org/packages/cberane/ms-teams-connector)
-[![Total Downloads](https://img.shields.io/packagist/dt/cberane/ms-teams-connector.svg?style=flat-square)](https://packagist.org/packages/cberane/ms-teams-connector)
+![Latest Version on GitHub](https://img.shields.io/github/v/release/cberane/ms-teams-connector)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cberane/ms-teams-connector)](https://packagist.org/packages/cberane/ms-teams-connector)
+[![Total Downloads](https://img.shields.io/packagist/dt/cberane/ms-teams-connector)](https://packagist.org/packages/cberane/ms-teams-connector)
 
 Simple php package to be able to push some messages/cards into Microsoft Teams.
 
@@ -22,7 +23,7 @@ use Cberane\MsTeamsConnector\Cards\TextCard;
 ...
 $connector = new TeamsConnector("https://tenant.webhook.office.com/webhookb2/your/url");
 $card = new TextCard('Hello World (from TextCard)');
-$conector->sendCard($card);
+$connector->sendCard($card);
 ```
 
 ### Testing
