@@ -22,4 +22,9 @@ class Choice
             'value' => $this->value
         ];
     }
+
+    public function toJson()
+    {
+        return json_encode($this->toArray());
+    }
 }

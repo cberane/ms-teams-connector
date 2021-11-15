@@ -54,6 +54,16 @@ class MultichoiceInputTest extends TestCase
     /**
      * @test
      */
+    public function test_choices()
+    {
+        $choice = new Choice('my display text', '4711');
+
+        self::assertEquals('{"display":"my display text","value":"4711"}', $choice->toJson());
+    }
+
+    /**
+     * @test
+     */
     public function add_one_choice()
     {
         $input = new MultichoiceInput();
