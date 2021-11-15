@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Cberane\MsTeamsConnector\Tests\Cards;
+namespace Cberane\MsTeamsConnector\Tests\Unit\Cards;
 
 
 use Cberane\MsTeamsConnector\CardContents\PotentialActions\HttpPost;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cberane\MsTeamsConnector\Tests;
+namespace Cberane\MsTeamsConnector\Tests\Interactive;
 
 use Cberane\MsTeamsConnector\CardContents\Fact;
 use Cberane\MsTeamsConnector\CardContents\Section;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Cberane\MsTeamsConnector\Tests;
+namespace Cberane\MsTeamsConnector\Tests\Unit\Cards;
 
 
 use Cberane\MsTeamsConnector\Cards\TextCard;

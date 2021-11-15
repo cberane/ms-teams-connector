@@ -35,9 +35,10 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit --testsuite default",
-        "test-webhooks": "vendor/bin/phpunit --testsuite webhooks",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+        "test": "vendor/bin/phpunit",
+        "test-interactive": "vendor/bin/phpunit --testsuite Interactive",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "test-full-coverage": "vendor/bin/phpunit --coverage-html coverage --testsuite Feature,Unit,Interactive"
     },
     "config": {
         "sort-packages": true

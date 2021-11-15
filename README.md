@@ -1,7 +1,7 @@
 # MS Teams Connector
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/cberane/ms-teams-incoming-webhooks.svg?style=flat-square)](https://packagist.org/packages/cberane/ms-teams-connector)
-[![Total Downloads](https://img.shields.io/packagist/dt/cberane/ms-teams-incoming-webhooks.svg?style=flat-square)](https://packagist.org/packages/cberane/ms-teams-connector)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cberane/ms-teams-connector.svg?style=flat-square)](https://packagist.org/packages/cberane/ms-teams-connector)
+[![Total Downloads](https://img.shields.io/packagist/dt/cberane/ms-teams-connector.svg?style=flat-square)](https://packagist.org/packages/cberane/ms-teams-connector)
 
 Simple php package to be able to push some messages/cards into Microsoft Teams.
 
@@ -10,13 +10,19 @@ Simple php package to be able to push some messages/cards into Microsoft Teams.
 You can install the package via composer:
 
 ```bash
-composer require cberane/ms-teams-incoming-webhooks
+composer require cberane/ms-teams-connector
 ```
 
 ## Usage
 
 ```php
-// Usage description here
+use Cberane\MsTeamsConnector\TeamsConnector;
+use Cberane\MsTeamsConnector\Cards\TextCard;
+
+...
+$connector = new TeamsConnector("https://tenant.webhook.office.com/webhookb2/your/url");
+$card = new TextCard('Hello World (from TextCard)');
+$conector->sendCard($card);
 ```
 
 ### Testing
@@ -31,11 +37,11 @@ composer test
 
 To send some cards to the endpoint you can use
 ```bash
-composer test-webhooks
+composer test-interactive
 ```
 
-You will get a demo card like the one from Microsofts technet [article](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-using?tabs=cURL#example-of-connector-message) 
-(as soon as it is implemented): 
+You will get a demo card, similar to the one from Microsofts technet 
+[article](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-using?tabs=cURL#example-of-connector-message): 
 ![](https://docs.microsoft.com/en-us/microsoftteams/platform/assets/images/connectorcard.png)
 
 ### Changelog

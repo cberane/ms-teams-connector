@@ -11,6 +11,7 @@
          processIsolation="false"
          stopOnFailure="false"
          testdox="true"
+         defaultTestSuite="Feature,Unit"
          xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd">
   <coverage>
     <include>
@@ -18,13 +19,16 @@
     </include>
   </coverage>
   <testsuites>
-    <testsuite name="default">
-      <directory>tests</directory>
-      <!-- exclude webhooks by default to prevent unwanted endpoint triggering-->
-      <exclude>tests/WebhookTest.php</exclude>
+    <!--<testsuite name="Feature">
+      <directory suffix="Test.php">./tests/Feature</directory>
+    </testsuite>-->
+
+    <testsuite name="Unit">
+      <directory suffix="Test.php">./tests/Unit</directory>
     </testsuite>
-    <testsuite name="all">
-      <directory>tests</directory>
+
+    <testsuite name="Interactive">
+      <directory suffix="Test.php">./tests/Interactive</directory>
     </testsuite>
   </testsuites>
   <php>

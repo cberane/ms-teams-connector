@@ -1,6 +1,6 @@
 <?php
 
-namespace Cberane\MsTeamsConnector\Tests;
+namespace Cberane\MsTeamsConnector\Tests\Interactive;
 
 use PHPUnit\Framework\TestCase;
 

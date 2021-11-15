@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Cberane\MsTeamsConnector\Tests\Inputs;
+namespace Cberane\MsTeamsConnector\Tests\Unit\Inputs;
 
 
 use Cberane\MsTeamsConnector\Inputs\DateInput;
